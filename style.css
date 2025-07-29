@@ -1,0 +1,116 @@
+:root{
+    --primary: #FF00FF ;
+    --secondary: #D92C54;
+    --tertiary: #1A2A80;
+    --muted: #4682A9;
+    --text: black;
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 30px;
+    
+ }
+
+ul,ol{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    margin: 5px 0;
+}
+
+ *{
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+ }
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+
+h3{
+    color: var(--muted);
+    border-bottom: var(--primary) 1px solid;
+    /* width: fit-content;
+    padding-right: 10px; */
+    padding-bottom: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+ #cv-container{
+    display: flex;
+    flex-direction: column;
+ }
+
+ #cv-name{
+    color: var(--text);
+    text-align: center;
+ }
+
+ #role{
+    color: aqua;
+ }
+
+ #company{
+    color: aquamarine;
+ }
+
+/*.edu-item .edu-name{
+    font-style: italic;
+}
+
+.edu-item .edu-uni{
+    font-weight: bold;
+} */
+
+.edu-item span:first-child{
+    font-style: italic;
+}
+
+.edu-item span:last-child{
+    font-weight: bold;
+}
+
+#basic-info{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#basic-info *{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#basic-info span {
+    font-size: medium;
+    color: var(--primary);
+    
+}
+
+#basic-info a{
+    color: var(--muted);
+}
+
