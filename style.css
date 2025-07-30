@@ -1,116 +1,91 @@
-:root{
-    --primary: #FF00FF ;
-    --secondary: #D92C54;
+:root {
+    --primary: #1d4ed8;
+    --secondary: #3b82f6;
     --tertiary: #1A2A80;
-    --muted: #4682A9;
-    --text: black;
-} 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- body{
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 0 30px;
-    
- }
+    --muted: #64748b;
+    --text: #111827;
+    --background: #f9fafb;
+}
 
-ul,ol{
-    list-style-type: none;
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
     padding: 0;
 }
 
-li{
-    margin: 5px 0;
-}
-
- *{
-    box-sizing: border-box;
-    font-family: "Dancing Script", cursive;
- }
-
-h1,h2,h3,h4{
-    margin: 0;
-}
-
-h3{
-    color: var(--muted);
-    border-bottom: var(--primary) 1px solid;
-    /* width: fit-content;
-    padding-right: 10px; */
-    padding-bottom: 5px;
-}
-
-p {
-    text-align: justify;
-}
-
- #cv-container{
-    display: flex;
-    flex-direction: column;
- }
-
- #cv-name{
+body {
+    background-color: var(--background);
     color: var(--text);
+    padding: 30px 20px;
+}
+
+#cv-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+#cv-name {
+    font-size: 2.5em;
+    font-weight: bold;
     text-align: center;
- }
-
- #role{
-    color: aqua;
- }
-
- #company{
-    color: aquamarine;
- }
-
-/*.edu-item .edu-name{
-    font-style: italic;
+    margin-bottom: 10px;
+    color: var(--primary);
 }
 
-.edu-item .edu-uni{
-    font-weight: bold;
-} */
-
-.edu-item span:first-child{
-    font-style: italic;
-}
-
-.edu-item span:last-child{
-    font-weight: bold;
-}
-
-#basic-info{
-    margin: 0 auto;
+#basic-info {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    align-items: center;
+    gap: 15px 30px;
+    margin: 20px 0;
+    font-size: 16px;
 }
 
-#basic-info *{
+#basic-info p,
+#basic-info a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text);
+    text-decoration: none;
+}
+
+#basic-info a:hover {
+    color: var(--primary);
+}
+
+h3 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
-
 }
 
-#basic-info span {
-    font-size: medium;
-    color: var(--primary);
-    
+p,
+li {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-#basic-info a{
-    color: var(--muted);
+ul,
+ol {
+    padding-left: 20px;
+    margin-top: 10px;
 }
 
+.edu-item span:first-child {
+    font-style: italic;
+}
+
+.edu-item span:last-child {
+    font-weight: bold;
+}
